@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketplace Modern</title>
+
+    <!-- Google Fonts: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- CSS dan JS -->
+    <link rel="stylesheet" href="index.css">
+    
+</head>
+<body>
+    <script defer src="script.js"></script>
+    <header class="navbar">
+        <div class="container">
+            <h1 class="logo">El Pace</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#">Beranda</a></li>
+                    <li><a href="#">Produk</a></li>
+                    <li><a href="#">Tentang</a></li>
+                    <li><a href="#">Kontak</a></li>
+                </ul>
+                <div class="keranjang-info">
+                    🛒 <span id="keranjang-count">0</span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Selamat Datang di El Pace</h2>
+            <p>Temukan produk terbaik dengan harga terbaik</p>
+            <a href="#produk" class="btn">Lihat Produk</a>
+        </div>
+    </section>
+
+    <section class="produk-section" id="produk">
+        <div class="container">
+            <h2 class="section-title">Produk Unggulan</h2>
+            <div class="filter-kategori">
+                <button class="filter-btn">Semua</button>
+                <button class="filter-btn">Elektronik</button>
+                <button class="filter-btn">Fashion</button>
+                <button class="filter-btn">Rumah Tangga</button>
+            </div>
+
+            <div class="produk-grid">
+                <div class="produk-card" data-kategori="elektronik">
+                    <img src="img/produk 1.jpg" alt="Produk 1">
+                    <h3>Microwave</h3>
+                    <p class="harga">Rp 5.500.000</p>
+                    <button class="btn-beli">Beli Sekarang</button>
+                </div>
+                <div class="produk-card" data-kategori="fashion">
+                    <img src="img/produk 2.jpg" alt="Produk 2">
+                    <h3>Sepatu Sneakers</h3>
+                    <p class="harga">Rp 2.500.000</p>
+                    <button class="btn-beli">Beli Sekarang</button>
+                </div>
+                <div class="produk-card" data-kategori="rumah tangga">
+                    <img src="img/produk 3.jpg" alt="Produk 3">
+                    <h3>Mesin Cuci</h3>
+                    <p class="harga">Rp 4.000.000</p>
+                    <button class="btn-beli">Beli Sekarang</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 El Pace. Made in Indonesia.</p>
+    </footer>
+</body>
+</html>
